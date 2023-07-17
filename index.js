@@ -939,6 +939,9 @@ function onDependencyLoaded(markdown) {
   element.setAttribute('class', ROOT_NODE)
   element.innerHTML = marked.parse(markdown[0])
   document.body.appendChild(element)
+
+  // Add ID tags for search element
+  document.getElementsByTagName('tbody')[0].setAttribute("id", "unique_id_body_search")
 }
 
 function markdown(markdown) {
