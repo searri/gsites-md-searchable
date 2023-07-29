@@ -942,6 +942,9 @@ function onDependencyLoaded(markdown) {
 
   // Add ID tags for search element
   document.getElementsByTagName('tbody')[0].setAttribute("id", "unique_id_body_search")
+  
+  // Add ID tag for pagination
+  document.getElementsByTagName('table')[0].setAttribute("id", "unique_id_paginate_table")
 }
 
 function markdown(markdown) {
